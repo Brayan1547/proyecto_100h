@@ -40,6 +40,9 @@
                 </p>
 
                 <p class="precio">150.000</p>
+                <button class="btn_abrir" data-nombre="baggy" data-precio="150000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
                    
             </div>
 
@@ -53,6 +56,9 @@
                 </p>
 
                 <p class="precio">160.000</p>
+                <button class="btn_abrir" data-nombre="baggy jean Dama" data-precio="160000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
              <div class="div1">
@@ -65,6 +71,9 @@
                 </p>
 
                 <p class="precio">170.000</p>
+                <button class="btn_abrir" data-nombre="cargo" data-precio="170000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
             
@@ -78,6 +87,9 @@
                 </p>
 
                 <p class="precio">140.000</p>
+                <button class="btn_abrir" data-nombre="pantalon pana" data-precio="140000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
                        
@@ -92,6 +104,9 @@
                 </p>
 
                 <p class="precio">170.000</p>
+                <button class="btn_abrir" data-nombre="Pantalon cuerina cargo" data-precio="170000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
                         <div class="div1">
@@ -104,6 +119,9 @@
                 </p>
 
                 <p class="precio">250.000</p>
+                <button class="btn_abrir" data-nombre="sudadera lounge sets" data-precio="250000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
    
             
@@ -114,5 +132,21 @@
 
     <footer>Aire: Donde el espacio se encuentra con el estilo. Creemos en la moda que te deja respirar y ser tú mismo sin restricciones. Energía pura en cada costura. ¡Eleva tu estilo!</footer>
     
+       <div id="miModal" class="modal_contenedor" style="display: none;">
+    <div class="modal_contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>Producto añadido</h2>
+        <p id="mensaje-producto"></p>
+        <hr>
+        <div id="lista-carrito" style="text-align: left; margin: 10px 0;"></div>
+        <p><strong>Total prendas:</strong> <span id="total-prendas">0</span></p>
+        <p><strong>Total a pagar:</strong> $<span id="total-precio">0</span></p>
+        <button onclick="cerrarModal()">Continuar Comprando</button>
+
+        <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
+    </div>
+   </div>
+   <script src="./../JavaScript/carrito.js"></script>
+
 </body>
 </html>

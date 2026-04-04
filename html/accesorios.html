@@ -40,6 +40,9 @@
                 </p>
 
                 <p class="precio">60.000</p>
+                <button class="btn_abrir" data-nombre="Gafas Cartier" data-precio="60000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
                    
             </div>
 
@@ -53,6 +56,9 @@
                 </p>
 
                 <p class="precio">100.000</p>
+                <button class="btn_abrir" data-nombre="Gafas Shield" data-precio="100000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
              <div class="div1">
@@ -64,6 +70,9 @@
                 <p class="texto1">una pieza imponente que combina la elegancia del acero bitono en oro y plata con un robusto bisel negro de alto contraste. Su dial detallado con lupa de fecha y marcadores luminiscentes ofrece funcionalidad y un aire de éxito en cualquier ocasión
 
                 <p class="precio">120.000</p>
+                <button class="btn_abrir" data-nombre="Reloj de Hombre Curren 8338" data-precio="120000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
             
@@ -77,6 +86,9 @@
                 </p>
 
                 <p class="precio">130.000</p>
+                <button class="btn_abrir" data-nombre="Reloj de Hombre Curren 8409" data-precio="130000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
                        
@@ -91,6 +103,9 @@
                 </p>
 
                 <p class="precio">130.000</p>
+                <button class="btn_abrir" data-nombre="Anillo Clasico de Plata Ley 925" data-precio="130000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
                         <div class="div1">
@@ -103,6 +118,9 @@
                 </p>
 
                 <p class="precio">150.000</p>
+                <button class="btn_abrir" data-nombre="Cadena Grumet de plata 925" data-precio="150000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
    
             
@@ -112,5 +130,22 @@
 
     <footer>Aire: Donde el espacio se encuentra con el estilo. Creemos en la moda que te deja respirar y ser tú mismo sin restricciones. Energía pura en cada costura. ¡Eleva tu estilo!</footer>
     
+       <div id="miModal" class="modal_contenedor" style="display: none;">
+    <div class="modal_contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>Producto añadido</h2>
+        <p id="mensaje-producto"></p>
+        <hr>
+        <div id="lista-carrito" style="text-align: left; margin: 10px 0;"></div>
+        <p><strong>Total prendas:</strong> <span id="total-prendas">0</span></p>
+        <p><strong>Total a pagar:</strong> $<span id="total-precio">0</span></p>
+        <button onclick="cerrarModal()">Continuar Comprando</button>
+
+        <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
+    </div>
+   </div>
+
+   <script src="./../JavaScript/carrito.js"></script>
+
 </body>
 </html>

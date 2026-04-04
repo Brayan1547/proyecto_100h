@@ -41,6 +41,9 @@
                 </p>
 
                 <p class="precio">100.000</p>
+                <button class="btn_abrir" data-nombre="Bolso acolchado" data-precio="100000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
                    
             </div>
 
@@ -54,6 +57,9 @@
                 </p>
 
                 <p class="precio">100.000</p>
+                <button class="btn_abrir" data-nombre="Mini Bag Edisth | LS3308" data-precio="100000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
              <div class="div1">
@@ -66,6 +72,9 @@
                 </p>
 
                 <p class="precio">100.000</p>
+                <button class="btn_abrir" data-nombre="Gafas De Sol Diamond" data-precio="100000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
             
@@ -79,11 +88,14 @@
                 </p>
 
                 <p class="precio">60.000</p>
+                <button class="btn_abrir" data-nombre="Catiel Gafas" data-precio="60000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
                        
 
-                        <div class="div1">
+            <div class="div1">
 
                 <img src="./../img/collar_manilla_1.jpg" alt="">
 
@@ -92,6 +104,9 @@
                 <p class="texto1">Este conjunto de collar y pulsera redefine la joyería contemporánea, fusionando la fuerza de la tendencia chunky con la delicadeza de un detalle personalizado. Es la pieza perfecta para quienes buscan un accesorio que hable de su identidad con un brillo sofisticado.
 
                 <p class="precio">1200.000</p>
+                <button class="btn_abrir" data-nombre="Conjunto Collar Manilla Alphabet Gold" data-precio="120000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
 
                         <div class="div1">
@@ -106,6 +121,9 @@
                 <p class="valor">Cada Anilo Tiene Un Valor De 60.000</p>
 
                 <p class="precio">360.000</p>
+                <button class="btn_abrir" data-nombre="Variedad De Anillos De Plata" data-precio="360000"
+                    onclick="agregarAlCarrito(this)">agregar al carrito
+                </button>
             </div>
    
             
@@ -116,6 +134,21 @@
 
     <footer>Aire: Donde el espacio se encuentra con el estilo. Creemos en la moda que te deja respirar y ser tú mismo sin restricciones. Energía pura en cada costura. ¡Eleva tu estilo!</footer>
     
+       <div id="miModal" class="modal_contenedor" style="display: none;">
+    <div class="modal_contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>Producto añadido</h2>
+        <p id="mensaje-producto"></p>
+        <hr>
+        <div id="lista-carrito" style="text-align: left; margin: 10px 0;"></div>
+        <p><strong>Total prendas:</strong> <span id="total-prendas">0</span></p>
+        <p><strong>Total a pagar:</strong> $<span id="total-precio">0</span></p>
+        <button onclick="cerrarModal()">Continuar Comprando</button>
+
+        <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
+    </div>
+   </div>
+   <script src="./../JavaScript/carrito.js"></script>
     
 </body>
 </html>
