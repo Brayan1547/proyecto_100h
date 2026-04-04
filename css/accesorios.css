@@ -71,6 +71,14 @@
     animation: popud 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
+#lista-carrito p {
+    color: #000 ;
+}
+
+#mensaje-producto {
+    color: #000000 ;
+}
+
 .modal_contenido::before {
     content: "";
     position: absolute;
