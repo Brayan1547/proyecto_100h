@@ -48,5 +48,14 @@ footer{
     color: white;
 }
 
+.logo_principal {
+    width: 600px;
+    height: auto;
+    /* display: block; */
+    margin: 0;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+
+}
+
 
 
