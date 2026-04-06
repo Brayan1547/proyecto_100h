@@ -26,7 +26,7 @@
     display: inline; /* colocar orizontal */
     font-weight:bold ;
     margin-right: 25px; /* esapcio entre las palabras */
-    font-size: 20px;   
+    font-size: 20px;
 }
 
 .menu a{
@@ -48,14 +48,87 @@ footer{
     color: white;
 }
 
-.logo_principal {
-    width: 600px;
-    height: auto;
-    /* display: block; */
-    margin: 0;
-    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
-
+.texto {
+    display: flex;
+    flex-direction: row; /* horizontal */
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center; /* espacio entre tx y img */
+    width: 100%;
+    gap: 50px;
+    padding: 60px 20px; 
+    box-sizing: border-box;
 }
 
+.contenedor_logo img {
+    max-width: 500px;
+    width: 500%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgb(56, 6, 156);
+    transition: all 0.3s;
+    border: 2px solid #00bcd4;
+} 
 
 
+.contenedor_logo{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ .secc-texto {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    font-size: 20px;
+} 
+
+.contenedor_logo img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0px 10px 30px rgba(120, 24, 203, 0.728);
+}
+
+/* @media (max-width: 600px) {
+    .texto {
+        flex-direction: column;
+    }
+} */
+
+/* @media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+
+/* Esto se activa solo en pantallas de menos de 600px (cel) */
+@media (max-width: 600px) {
+    .texto {
+        flex-direction: column;
+    }
+    
+    /* El contenedor que pusimos con 'flex' ahora se pone en columna */
+    .seccion-principal, 
+    .contenedor-principal {
+        flex-direction: column ;
+        padding: 20px ;
+        text-align: center ;
+    }
+
+    /* La imagen se ajusta al ancho del cel */
+    .seccion-imagen img, 
+    .bloque-imagen img {
+        max-width: 100% ;
+        margin-bottom: 20px;
+    }
+
+    /* El texto se centra y ajusta el tamaño */
+    .seccion-texto, 
+    .bloque-texto {
+        max-width: 100% ;
+    }
+
+    .seccion-texto h1 {
+        font-size: 1.8rem ; /* Título más pequeño para cel */
+    }
+}
