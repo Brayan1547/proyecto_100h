@@ -106,30 +106,25 @@ footer{
     .texto {
         flex-direction: column;
     }
+    
+    .menu {
+        display: flex;
+        flex-direction: column; /* Pone Inicio, Hombre, Mujer uno abajo del otro */
+        align-items: center;
+        padding: 0;
+    }
 
-  .menu {
-    display: flex;
-    flex-direction: row; /* Para que los nombres queden uno al lado del otro */
-    flex-wrap: wrap;    /* Si no cabe que bajen ordenadamente */
-    justify-content: center;
-    padding: 10px 0;
-    font-size: 14px;    /* Letra más pequeña para que quepa en el cel */
-  }
+    .menu_list {
+        margin: 10px 0; /* Separa los botones para que no estén pegados */
+    }
 
-  .menu_list {
-    margin: 5px 10px;   /* Espacio entre cada botón */
-    list-style: none;
-  }
+    .texto h1 {
+        font-size: 1.5rem ; /* Achica el título gigante "AIRE" */
+        text-align: center;
+    }
 
-    .seccion-principal, .contenedor-principal {
-    display: flex;
-    flex-direction: column; /* Todo uno debajo del otro */
-    align-items: center;
-  }
-
-  /* Ajusta las fotos de los productos */
-  img {
-    max-width: 90%;  /* Que no toquen los bordes del cel */
-    height: auto;
-  }
+    .contenedor {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
