@@ -101,34 +101,35 @@ footer{
     }
 } */
 
-/* Esto se activa solo en pantallas de menos de 600px (cel) */
+
 @media (max-width: 600px) {
     .texto {
         flex-direction: column;
     }
-    
-    /* El contenedor que pusimos con 'flex' ahora se pone en columna */
-    .seccion-principal, 
-    .contenedor-principal {
-        flex-direction: column ;
-        padding: 20px ;
-        text-align: center ;
-    }
 
-    /* La imagen se ajusta al ancho del cel */
-    .seccion-imagen img, 
-    .bloque-imagen img {
-        max-width: 100% ;
-        margin-bottom: 20px;
-    }
+  .menu {
+    display: flex;
+    flex-direction: row; /* Para que los nombres queden uno al lado del otro */
+    flex-wrap: wrap;    /* Si no cabe que bajen ordenadamente */
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 14px;    /* Letra más pequeña para que quepa en el cel */
+  }
 
-    /* El texto se centra y ajusta el tamaño */
-    .seccion-texto, 
-    .bloque-texto {
-        max-width: 100% ;
-    }
+  .menu_list {
+    margin: 5px 10px;   /* Espacio entre cada botón */
+    list-style: none;
+  }
 
-    .seccion-texto h1 {
-        font-size: 1.8rem ; /* Título más pequeño para cel */
-    }
+    .seccion-principal, .contenedor-principal {
+    display: flex;
+    flex-direction: column; /* Todo uno debajo del otro */
+    align-items: center;
+  }
+
+  /* Ajusta las fotos de los productos */
+  img {
+    max-width: 90%;  /* Que no toquen los bordes del cel */
+    height: auto;
+  }
 }
