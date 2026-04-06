@@ -1,6 +1,8 @@
 .principal{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
 }
@@ -11,6 +13,8 @@
     padding: 10px;
     box-shadow: 0 0 12px rgba(225, 225, 225, 0.15);
     margin: 30px  ;
+    width: 350px;
+    height: 500px;
 }
 
 .div1 img {
