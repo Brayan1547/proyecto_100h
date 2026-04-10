@@ -61,8 +61,7 @@ footer{
 }
 
 .contenedor_logo img {
-    max-width: 500px;
-    width: 500%;
+    width: 100%;
     border-radius: 12px;
     box-shadow: 0px 4px 20px rgb(56, 6, 156);
     transition: all 0.3s;
@@ -87,6 +86,7 @@ footer{
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0px 10px 30px rgba(120, 24, 203, 0.728);
 }
+
 
 /* @media (max-width: 600px) {
     .texto {
@@ -127,4 +127,10 @@ footer{
         width: 100%;
         padding: 0 10px;
     }
+
+    .logo_principal{
+    min-width: 100%;
+}
+
+   
 }
