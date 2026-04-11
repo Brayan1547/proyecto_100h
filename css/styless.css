@@ -88,18 +88,7 @@ footer{
 }
 
 
-/* @media (max-width: 600px) {
-    .texto {
-        flex-direction: column;
-    }
-} */
 
-/* @media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-} */
 
 
 @media (max-width: 600px) {
@@ -126,11 +115,14 @@ footer{
     .contenedor {
         width: 100%;
         padding: 0 10px;
+        flex-wrap: wrap;
     }
 
     .logo_principal{
     min-width: 100%;
-}
+    }
 
-   
+    .logo img {
+        width: 120px;
+    }
 }

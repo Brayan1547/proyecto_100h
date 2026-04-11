@@ -124,3 +124,29 @@
     transform: translateY(-2px); /* Flota un poquito al pasar el mouse */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .principal {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .div1 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .div1 img {
+        height: 200px;
+    }
+
+    .btn_abrir {
+        width: 100%;
+    }
+}

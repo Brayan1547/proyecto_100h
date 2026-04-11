@@ -148,59 +148,7 @@
     <footer>Aire: Donde el espacio se encuentra con el estilo. Creemos en la moda que te deja respirar y ser tú mismo
         sin restricciones. Energía pura en cada costura. ¡Eleva tu estilo!</footer>
 
-    <!-- <div id="miModal" class="modal_contenedor" style="display: none;">
-        <div class="modal_contenido">
-            <span class="cerrar" onclick="cerrarModal()">&times;</span>
-                <h3>Producto añadido</h3>
-                <p>Has agregado: <strong id="nombre_producto"></strong>a tu carrito AIRE</p>
-                <P>Prendas toatles en el carrito: <span id="cantidad_total">0</span></P>
-            <button onclick="cerrarModal()">continuar comprando</button>
-        </div>
-    </div> -->
-
-    <!-- <div id="miModal" class="modal_contenedor" style="display: none;">
-       <div class="modal_contenido">
-            <span class="cerrar" onclick="cerrarModal()">&times;</span>
-            <h2>producto añadido</h2>
-            <p id="mensaje-producto"></p>
-            <hr>
-            <div id="lista-carrito" style="text-align: left; margin: 10px 0 ;"></div>
-            <p><strong>total prendas:</strong> <span id="total-prendas">0</span></p>
-            <p><strong>total a pagar</strong>$<span id="total-precio">0</span></p>
-            <button onclick="cerrarModal()">Continuar Comprando</button>
-       </div>
-   </div>
-    
-   <script>
-    function agregarAlCarrito(boton) {
-        const nombre = boton.getAttribute('data-nombre');
-        const precio = parseInt(boton.getAttribute ('carrito_aire'))
-        const index = carrito.findIndex(item => item.nombre === nombre);
-
-        if (index !== -1) {carrito[index].cantidad += 1;
-        } else {carrito.push}({nombre: nombre, precio: precio, cantidad:1});
-                                    }
-        
-    function
-    mostrarEnModal(ultimoNombre) {const carrito = JSON.parse(localStorage.getItem('carrito_aire'));
-        const listaHtml = document.get ElementByid('lista-carrito'); let totalp = 0, total$ = 0;
-
-        listaHtml.innerHTML = ""; carrito.forEach(item => {
-            totalp += item.cantidad;
-            total$ += (item.precio * item.cantidad);
-            listaHtml.innerHTML += <p> • ${item.nombre} (x${item.cantidad}) </p>;
-        });
-
-    document.getElementById('mensaje-producto').innerText = `sumaste: ${ultimoNombre}`;
-    document.getElementById('total-prendas').innerText = totalP;
-    document.getElementById('total-precio').innerText = total$.toLocaleString();
-    document.getElementById("miModal").style.display = "flex";    
-    }
-
-    function cerraarModal(){
-        document.getElementById("miModal").style.display = "none";
-    }
-   </script> -->
+   
    
    <div id="miModal" class="modal_contenedor" style="display: none;">
     <div class="modal_contenido">
