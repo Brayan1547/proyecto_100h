@@ -192,3 +192,28 @@ html, body {
 .puntos-clave, li {
     color: white;
 }
+
+
+/* para el boton del carrito */
+
+.btn_abrir {
+    width: 100%;
+    padding: 12px;
+    background-color: #4ade80;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.btn_abrir:hover {
+    background-color: #22c55e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 222, 128, 0.4);
+}

@@ -174,24 +174,6 @@ html, body {
     color: white;
 }
 
-/* .texto1 {
-    display: none;
-    -webkit-line-clamp: 3; Número de líneas que quieres mostrar al principio */
-    /* -webkit-box-orient: vertical;
-    overflow: hidden;
-    color: #fff;
-    transition: all 0.3s ease;
-    margin-bottom: 10px;
-} */
-
-/* Estado cuando se hace clic en "Ver más" */
-/* .texto1.expandido {
-    display: block; Muestra todo el texto */
-    /* -webkit-line-clamp: initial; 
-    height: auto;
-    overflow: visible;
-} */
-
 
 .texto1 {
     display: none; /* Esto lo oculta totalmente */
@@ -204,4 +186,28 @@ html, body {
 .texto1.expandido {
     display: block; /* Esto lo hace aparecer por completo */
     margin-top: 10px;
+}
+
+/* para el boton del carrito */
+
+.btn_abrir {
+    width: 100%;
+    padding: 12px;
+    background-color: #4ade80;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.btn_abrir:hover {
+    background-color: #22c55e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 222, 128, 0.4);
 }
