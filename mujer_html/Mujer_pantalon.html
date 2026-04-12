@@ -36,8 +36,16 @@
 
                 <h3 class="titu">Baggy </h3>
 
+                <ul class="puntos-clave">
+                    <li>Diseño Tribal Bordado</li>
+                    <li>Mezcla de Algodón Premium</li>
+                    <li>Fit Ultra-Ancho</li>
+                </ul>
+
                 <p class="texto1">Nuestros nuevos Gravity Baggy no son solo unos jeans, son una pieza de arquitectura urbana diseñada para quienes no temen ocupar espacio. Esta edición especial combina una silueta ultra-oversize inspirada en los años 90
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">150.000</p>
                 <button class="btn_abrir" data-nombre="baggy" data-precio="150000"
@@ -52,8 +60,16 @@
 
                 <h3 class="titu">Baggy Jean Dama</h3>
 
+                <ul class="puntos-clave">
+                    <li>Gráficos Estilizados</li>
+                    <li>Denim Lavado Premium</li>
+                    <li>Bota Extra-Larga</li>
+                </ul>
+
                 <p class="texto1">Baggy Jeans. Con un corte ultra ancho inspirado en los 90s y un estampado gráfico estilo graffiti en la bota, estos jeans no solo se visten, se sienten. Perfectos para un look oversize que roba todas las miradas. ¡El fit que tu clóset estaba pidiendo!
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">160.000</p>
                 <button class="btn_abrir" data-nombre="baggy jean Dama" data-precio="160000"
@@ -61,14 +77,23 @@
                 </button>
             </div>
 
+
              <div class="div1">
 
                 <img src="./../img/cargo_mujer3.webp" alt="">
 
                 <h3 class="titu">Cargo</h3>
 
+                <ul class="puntos-clave">
+                    <li>Máxima Funcionalidad</li>
+                    <li>Estructura Robusta</li>
+                    <li>Acabado gris desgastado que le da un carácter rebelde y resistente.</li>
+                </ul>
+
                 <p class="texto1">Lleva tu vibe urbana al siguiente nivel con nuestros pantalones cargo denim de tiro alto. Con un corte ancho y holgado, estos jeans no solo se visten, se sienten. Perfectos para un look oversize que roba todas las miradas. ¡El fit que tu clóset estaba pidiendo!
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">170.000</p>
                 <button class="btn_abrir" data-nombre="cargo" data-precio="170000"
@@ -83,8 +108,16 @@
 
                 <h3 class="titu">Pantalon Pana</h3>
 
+                <ul class="puntos-clave">
+                    <li>Tejido de Corduroy Premium</li>
+                    <li>Tiro Alto Estilizador</li>
+                    <li>Silueta de bota ancha con aberturas laterales para una caída moderna y máxima libertad de movimiento.</li>
+                </ul>
+
                 <p class="texto1">Eleva tu vibe de otoño con nuestros nuevos pantalones de pana. Diseñados para un ajuste oversize y ultra cómodo, esta pieza combina la textura vintage de la pana con un corte contemporáneo que es tendencia absoluta. El color marrón caramelo es perfecto para tus outfits de temporada. ¡El fit que tu clóset estaba pidiendo!
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">140.000</p>
                 <button class="btn_abrir" data-nombre="pantalon pana" data-precio="140000"
@@ -100,8 +133,16 @@
 
                 <h3 class="titu">Pantalon Cuerina Cargo</h3>
 
+                <ul class="puntos-clave">
+                    <li>Fit Relajado Oversize</li>
+                    <li>Estilo Utilitario Moderno</li>
+                    <li>Material sintético con acabado brillante que simula el cuero real</li>
+                </ul>
+
                 <p class="texto1">Nuestra interpretación del cargo clásico en un acabado sintético de lujo. Este pantalón cuenta con corte de bota ancha, ajuste de cordón en los tobillos para versatilidad de estilo y 6 bolsillos estratégicos. El material es suave al tacto, flexible y con un brillo satinado que resalta cada detalle de su confección.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">170.000</p>
                 <button class="btn_abrir" data-nombre="Pantalon cuerina cargo" data-precio="170000"
@@ -115,8 +156,16 @@
 
                 <h3 class="titu">Sudadera lounge Sets </h3>
 
+                <ul class="puntos-clave">
+                    <li>Conjunto de Dos Piezas</li>
+                    <li>Lana de Punto Fino</li>
+                    <li>Silueta Versátil y Holgada</li>
+                </ul>
+
                 <p class="texto1">Lleva la comodidad a un nivel superior sin perder la sofisticación. Nuestro conjunto de sudadera y pantalón está diseñado para la mujer moderna que busca un look impecable tanto para un día de descanso como para una salida casual por la ciudad.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">250.000</p>
                 <button class="btn_abrir" data-nombre="sudadera lounge sets" data-precio="250000"
@@ -146,6 +195,16 @@
         <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
     </div>
    </div>
+
+    <script>
+        function VerMas(btn) {
+            const texto = btn.previousElementSibling;
+            texto.classList.toggle('expandido');
+            btn.textContent = texto.classList.contains('expandido') ? 'ver menos' : 'ver más';
+        }
+    </script>
+
+
    <script src="./../JavaScript/carrito.js"></script>
 
 </body>

@@ -10,11 +10,16 @@
 
 .div1{
     background-color: #333;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 12px rgba(225, 225, 225, 0.15);
-    margin: 30px  ;
+    margin: 20px  ;
     width: 350px;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    transition: 0.3s;
 }
 
 .div1 img {
@@ -143,4 +148,60 @@ html, body {
     .btn_abrir {
         width: 100%;
     }
+}
+
+.btn_ver_mas {
+    background: none;
+    border: none;
+    color: #4ade80;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 4px 0;
+    margin-bottom: 8px;
+    /* margin-bottom: auto; */ /* acomodar botton cuando se abra el vermas */
+}
+
+
+.puntos-clave {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+    text-align: left;
+    color: white;
+}
+
+.puntos-clave, li {
+    color: white;
+}
+
+/* .texto1 {
+    display: none;
+    -webkit-line-clamp: 3; Número de líneas que quieres mostrar al principio */
+    /* -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+} */
+
+/* Estado cuando se hace clic en "Ver más" */
+/* .texto1.expandido {
+    display: block; Muestra todo el texto */
+    /* -webkit-line-clamp: initial; 
+    height: auto;
+    overflow: visible;
+} */
+
+
+.texto1 {
+    display: none; /* Esto lo oculta totalmente */
+    color: #fff;
+    margin-bottom: 15px;
+    /* Quitamos el overflow y el line-clamp porque ya no los necesitamos */
+}
+
+/* Estado cuando se hace clic en "Ver más" */
+.texto1.expandido {
+    display: block; /* Esto lo hace aparecer por completo */
+    margin-top: 10px;
 }

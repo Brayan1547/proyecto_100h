@@ -9,11 +9,16 @@
 
 .div1{
     background-color: #333;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 12px rgba(225, 225, 225, 0.15);
     margin: 30px;
     width: 350px;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    transition: 0.3s;
 }
 
 .div1 img {
@@ -142,3 +147,36 @@ html, body {
         width: 100%;
     }
 }
+
+.texto1 {
+    display: none;
+}
+
+.texto1.expandido {
+    display: block;
+}
+
+.btn_ver_mas {
+    background: none;
+    border: none;
+    color: #4ade80;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 4px 0;
+    margin-bottom: 8px;
+    /* margin-bottom: auto; */ /* acomodar botton cuando se abra el vermas */
+}
+
+
+.puntos-clave {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+    text-align: left;
+    color: white;
+}
+
+.puntos-clave, li {
+    color: white;
+}
+

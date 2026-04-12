@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,23 @@
     <link rel="stylesheet" href="./../css/styless.css">
     <link rel="stylesheet" href="./../css/chaquetas.css">
 </head>
+
 <body>
 
-    
+
     <header>
         <nav class="contenedor">
 
-             <div class="logo">
+            <div class="logo">
                 <img src="./../img/logo AIRE.png" alt="">
             </div>
 
-        <ul class="menu">
+            <ul class="menu">
                 <li class="menu_list"><a href="./../index.html">inicio</a></li>
                 <li class="menu_list"><a href="pantalones.html">pantalones</a></li>
                 <li class="menu_list"><a href="">chaquetas</a></li>
                 <li class="menu_list"><a href="accesorios.html">Accesorios</a></li>
-        </ul>
+            </ul>
 
         </nav>
     </header>
@@ -30,53 +32,84 @@
 
     <main class="texto">
         <section class="principal">
-             <div class="div1">
+            <div class="div1">
 
                 <img src="./../img/chaqueta beisbolera.jpg" alt="">
 
                 <h3 class="titu">chaqueta beisbolera</h3>
 
-                <p class="texto1">: Nuestra versión definitiva de la clásica chaqueta de béisbol, reinventada con un toque de streetwear moderno y audaz. Confeccionada con una mezcla de lana sintética y mangas de cuero sintético en contraste, esta chaqueta presenta un diseño minimalista y cómodo. El gran parche de 'NY' en el pecho y el bordado de 'New York' en la manga le dan un carácter auténtico y rebelde. El texto motivacional bordado en el pecho añade un toque de personalidad único. Perfecta para un look urbano y lleno de actitud.
+                <ul class="puntos-clave">
+                    <li>Mezcla de lana y cuero sintético</li>
+                    <li>Parches bordados de alta densidad</li>
+                    <li>Corte Streetwear relajado</li>
+                </ul>
+
+                <p class="texto1">Nuestra versión definitiva de la clásica chaqueta de béisbol, reinventada con un
+                toque de streetwear moderno y audaz. Confeccionada con una mezcla de lana sintética y mangas de
+                cuero sintético en contraste, esta chaqueta presenta un diseño minimalista y cómodo. El gran parche
+                de 'NY' en el pecho y el bordado de 'New York' en la manga le dan un carácter auténtico y rebelde.
+                El texto motivacional bordado en el pecho añade un toque de personalidad único. Perfecta para un
+                    look urbano y lleno de actitud.
                 </p>
+
+                 <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">170.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta beisbolera" data-precio="170000"
                     onclick="agregarAlCarrito(this)">agregar al carrito
                 </button>
-                   
+
             </div>
 
-             <div class="div1">
+            <div class="div1">
 
                 <img src="./../img/chaqueta cuerina.jpg" alt="">
 
                 <h3 class="titu">chaqueta cuerina</h3>
 
-                <p class="texto1">Chaqueta en ecocuero premium negro con bordado "Saints" de estética heavy-gothic en contraste blanco. Una pieza de alto impacto que fusiona el lujo urbano con la rebeldía del metal.
-                Silueta oversize con puños y cintura ajustadas en rip acanalado. Estructura robusta, caída pesada y volumen masivo para un ajuste impecable.
+                <ul class="puntos-clave">
+                    <li>Ecocuero premium texturizado</li>
+                    <li>Bordado "Saints" estilo Gothic</li>
+                    <li>Puños y cintura en rip ajustado</li>
+                </ul>
+
+                <p class="texto1">Chaqueta en ecocuero premium negro con bordado "Saints" de estética heavy-gothic en
+                    contraste blanco. Una pieza de alto impacto que fusiona el lujo urbano con la rebeldía del metal.
+                    Silueta oversize con puños y cintura ajustadas en rip acanalado. Estructura robusta, caída pesada y
+                    volumen masivo para un ajuste impecable.
                 </p>
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">240.000</p>
                 <button class="btn_abrir" data-nombre="Chaqueta Cuerina" data-precio="240000"
                     onclick="agregarAlCarrito(this)">agregar al carrito
                 </button>
-                   
+
             </div>
 
-             <div class="div1">
+            <div class="div1">
 
                 <img src="./../img/chaqueta_3.png" alt="">
 
                 <h3 class="titu">Double Sided Nike Puffer Jacket</h3>
 
-                <p class="texto1">Con un diseño acolchado premium en color negro, ofrece máxima calidez y resistencia al viento sin perder la ligereza. Incluye detalles exclusivos de la colaboración en el cuello y el pecho, combinando funcionalidad y lujo en una pieza de colección imprescindible
+                <ul class="puntos-clave">
+                    <li>Relleno térmico sintético de alto gramaje</li>
+                    <li>Acabado exterior en nylon resistente al viento</li>
+                    <li>Tecnología reversible (Dos estilos en una sola prenda).</li>
+                </ul>
+
+                <p class="texto1">Con un diseño acolchado premium en color negro, ofrece máxima calidez y resistencia al
+                    viento sin perder la ligereza. Incluye detalles exclusivos de la colaboración en el cuello y el
+                    pecho, combinando funcionalidad y lujo en una pieza de colección imprescindible
                 </p>
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">150.000</p>
                 <button class="btn_abrir" data-nombre="Double Sided Nike puffer Jacket" data-precio="150000"
                     onclick="agregarAlCarrito(this)">agregar al carrito
                 </button>
-                   
+
             </div>
 
             <div class="div1">
@@ -85,14 +118,24 @@
 
                 <h3 class="titu">Chaqueta Champions (Puma BMW M Motorsport)</h3>
 
-                <p class="texto1">Una prenda de diseño urbano impecable que combina tejidos transpirables de alta calidad con los logos icónicos de la marca en alta definición. Su ajuste deportivo y detalles premium la convierten en la opción ideal para quienes buscan comodidad y la exclusividad del mundo del motor en un solo outfit.
+                <ul class="puntos-clave">
+                    <li>Composición de poliéster y algodón premium</li>
+                    <li>Estampados en serigrafía de alta durabilidad</li>
+                    <li>Capucha ajustable con forro interno deportivo.</li>
+                </ul>
+
+                <p class="texto1">Una prenda de diseño urbano impecable que combina tejidos transpirables de alta
+                    calidad con los logos icónicos de la marca en alta definición. Su ajuste deportivo y detalles
+                    premium la convierten en la opción ideal para quienes buscan comodidad y la exclusividad del mundo
+                    del motor en un solo outfit.
                 </p>
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">140.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta Champions (Puma BMW M Motorsport)" data-precio="140000"
                     onclick="agregarAlCarrito(this)">agregar al carrito
                 </button>
-                   
+
             </div>
 
 
@@ -102,14 +145,23 @@
 
                 <h3 class="titu">Chaqueta Jean </h3>
 
-                <p class="texto1">Eleva tu outfit con esta chaqueta vaquera premium en color negro con efecto lavado. Su diseño clásico de corte estructurado combina la resistencia del denim de alta calidad con un estilo urbano sofisticado.
+                <ul class="puntos-clave">
+                    <li>Costuras reforzadas para mayor durabilidad.</li>
+                    <li>Calce clásico con botones metálicos contramarcados.</li>
+                    <li>Proceso de lavado "Stone Wash".</li>
+                </ul>
+
+                <p class="texto1">Eleva tu outfit con esta chaqueta vaquera premium en color negro con efecto lavado. Su
+                    diseño clásico de corte estructurado combina la resistencia del denim de alta calidad con un estilo
+                    urbano sofisticado.
                 </p>
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">150.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta jean" data-precio="150000"
                     onclick="agregarAlCarrito(this)">agregar al carrito
                 </button>
-                   
+
             </div>
 
 
@@ -119,37 +171,60 @@
 
                 <h3 class="titu">Chaqueta Gamusa</h3>
 
-                <p class="texto1">la prenda definitiva para quienes buscan elegancia y protección contra el frío en una sola pieza. Diseñada con un exterior de ante de alta calidad y un forro interior de borreguillo ultra suave, esta chaqueta te garantiza una calidez excepcional y una comodidad superior durante todo el día
+                <ul class="puntos-clave">
+                    <li>Exterior en gamuza sintética de alta calidad.</li>
+                    <li>Forro interno tipo "Ovejero" para máxima calidez.</li>
+                    <li>Cuello texturizado y bolsillos frontales amplios.</li>
+                </ul>
+
+                <p class="texto1">la prenda definitiva para quienes buscan elegancia y protección contra el frío en una
+                    sola pieza. Diseñada con un exterior de ante de alta calidad y un forro interior de borreguillo
+                    ultra suave, esta chaqueta te garantiza una calidez excepcional y una comodidad superior durante
+                    todo el día
                 </p>
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">160.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta Gamusa" data-precio="160000"
                     onclick="agregarAlCarrito(this)">agregar al carrito
                 </button>
-                   
+
             </div>
 
         </section>
     </main>
 
 
-    <footer>Aire: Donde el espacio se encuentra con el estilo. Creemos en la moda que te deja respirar y ser tú mismo sin restricciones. Energía pura en cada costura. ¡Eleva tu estilo!</footer>
-    
-       <div id="miModal" class="modal_contenedor" style="display: none;">
-    <div class="modal_contenido">
-        <span class="cerrar" onclick="cerrarModal()">&times;</span>
-        <h2>Producto añadido</h2>
-        <p id="mensaje-producto"></p>
-        <hr>
-        <div id="lista-carrito" style="text-align: left; margin: 10px 0;"></div>
-        <p><strong>Total prendas:</strong> <span id="total-prendas">0</span></p>
-        <p><strong>Total a pagar:</strong> $<span id="total-precio">0</span></p>
-        <button onclick="cerrarModal()">Continuar Comprando</button>
+    <footer>Aire: Donde el espacio se encuentra con el estilo. Creemos en la moda que te deja respirar y ser tú mismo
+        sin restricciones. Energía pura en cada costura. ¡Eleva tu estilo!</footer>
 
-        <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
+    <div id="miModal" class="modal_contenedor" style="display: none;">
+        <div class="modal_contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2>Producto añadido</h2>
+            <p id="mensaje-producto"></p>
+            <hr>
+            <div id="lista-carrito" style="text-align: left; margin: 10px 0;"></div>
+            <p><strong>Total prendas:</strong> <span id="total-prendas">0</span></p>
+            <p><strong>Total a pagar:</strong> $<span id="total-precio">0</span></p>
+            <button onclick="cerrarModal()">Continuar Comprando</button>
+
+            <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar
+                Carrito</button>
+        </div>
     </div>
-   </div>
-   <script src="./../JavaScript/carrito.js"></script>
-   
+
+    <script>
+        function VerMas(btn) {
+            const texto = btn.previousElementSibling;
+            texto.classList.toggle('expandido');
+            btn.textContent = texto.classList.contains('expandido') ? 'ver menos' : 'ver más';
+        }
+    </script>
+
+
+    <script src="./../JavaScript/carrito.js"></script>
+
 </body>
+
 </html>

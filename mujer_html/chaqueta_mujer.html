@@ -36,8 +36,16 @@
 
                 <h3 class="titu">Chaqueta Wonder </h3>
 
+                <ul class="puntos-clave">
+                    <li>Capota Térmica Integrada</li>
+                    <li>Aislamiento Térmico Superior</li>
+                    <li>Acabado "Matte Black"</li>
+                </ul>
+
                 <p class="texto1">Lleva el concepto de comodidad al siguiente nivel. Nuestra chaqueta puffer corta no solo te protege del frío, te envuelve en él. Con un interior completamente forrado en peluche ultrasuave y una silueta crop que resalta tu figura, es la pieza clave para tus outfits de invierno.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">150.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta Wonder" data-precio="150000"
@@ -52,8 +60,16 @@
 
                 <h3 class="titu">Chaqueta Jeans Obejera</h3>
 
+                <ul class="puntos-clave">
+                    <li>Forro de Piel Sintética</li>
+                    <li>Denim con Proceso de Lavado</li>
+                    <li>Corte a la cintura que ofrece una silueta estilizada y versátil para cualquier outfit.</li>
+                </ul>
+
                 <p class="texto1">Esta no es una chaqueta de jean común; es la pieza definitiva que fusiona la actitud rebelde del denim con la sofisticación extrema de la piel sintética de alta gama. Diseñada para quienes no solo quieren cubrirse del frío, sino hacer una declaración de moda en cada paso.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">190.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta jeans Obejera" data-precio="190000"
@@ -67,8 +83,16 @@
 
                 <h3 class="titu">Chaqueta Cuerina</h3>
 
+                <ul class="puntos-clave">
+                    <li>Ecocuero de Alta Gama</li>
+                    <li>Cuero de alta Gama</li>
+                    <li>Cremalleras y broches plateados de alta durabilidad que aportan un estilo rebelde y clásico.</li>
+                </ul>
+
                 <p class="texto1">Confeccionada en sintético de alta densidad con acabado satinado. Esta chaqueta cuenta con solapas clásicas de muesca, múltiples cremalleras funcionales y un cinturón integrado con hebilla metálica. Su forro interno suave permite un uso cómodo durante todo el día, mientras que sus hombreras estructuradas aportan una silueta poderosa y vanguardista.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">150.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta cuerina" data-precio="150000"
@@ -83,8 +107,16 @@
 
                 <h3 class="titu">Chaqueta Parca</h3>
 
+                <ul class="puntos-clave">
+                    <li>Tecnología Térmica Avanzada</li>
+                    <li>Capota con Piel Sintética Desmontable</li>
+                    <li>Corte Ajustado Contorneado</li>
+                </ul>
+
                 <p class="texto1">No dejes que el frío detenga tu estilo. Nuestra Parka Alpine está diseñada para ofrecerte la máxima protección térmica con un toque de sofisticación. Su corte largo tipo gabán y su imponente cuello de piel sintética premium la convierten en la pieza estrella de cualquier viaje a la nieve o invierno en la ciudad. ¡Mantente cálida, siéntete increíble!
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">160.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta Parca" data-precio="160000"
@@ -100,8 +132,16 @@
 
                 <h3 class="titu">Chaqueta En Pana</h3>
 
+                <ul class="puntos-clave">
+                    <li>Tejido de Corduroy Suave</li>
+                    <li>Fit Cropped Oversize Moderno</li>
+                    <li>Hardware Metálico Duradero</li>
+                </ul>
+
                 <p class="texto1">Esta no es una chaqueta acolchada común; es una pieza que reinventa el concepto de abrigo urbano utilizando la textura clásica de la pana acanalada de alta densidad. Con un sofisticado tono crema que combina con absolutamente todo, esta chaqueta "crop" es la pieza definitiva para quienes buscan un look aesthetic sin sacrificar el confort térmico.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">140.000</p>
                 <button class="btn_abrir" data-nombre="chaqueta En Pana" data-precio="140000"
@@ -115,8 +155,16 @@
 
                 <h3 class="titu">Sudadera lounge Sets </h3>
 
+                <ul class="puntos-clave">
+                    <li>Combinación de Materiales Premium</li>
+                    <li>Fit Relajado Versátil</li>
+                    <li>Estilo Varsity Clásico</li>
+                </ul>
+
                 <p class="texto1">Lleva tu vibe universitaria a un nuevo nivel con esta chaqueta letterman de tiro alto. Destaca por su diseño de cuerpo de tela de fieltro y mangas en contraste de poliuretano sintético. Cuenta con un cierre frontal de botones metálicos a presión, puños y dobladillo acanalados con rayas deportivas clásicas, y un gran parche bordado con la inicial 'B'.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">120.000</p>
                 <button class="btn_abrir" data-nombre="sudadera lounge Sets" data-precio="120000"
@@ -146,6 +194,16 @@
         <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
     </div>
    </div>
+
+    <script>
+        function VerMas(btn) {
+            const texto = btn.previousElementSibling;
+            texto.classList.toggle('expandido');
+            btn.textContent = texto.classList.contains('expandido') ? 'ver menos' : 'ver más';
+        }
+    </script>
+
+
    <script src="./../JavaScript/carrito.js"></script>
 
 </body>

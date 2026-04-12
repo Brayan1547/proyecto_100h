@@ -37,8 +37,16 @@
 
                 <h3 class="titu">Bolso acolchado</h3>
 
+                <ul class="puntos-clave">
+                    <li>Textura Acolchada Diamante</li>
+                    <li>Correa de Cadena Trenzada</li>
+                    <li>Cierre de Broche Seguro</li>
+                </ul>
+
                 <p class="texto1">Nuestro bolso acolchado en negro profundo con cadena dorada es la definición de sofisticación. Su diseño de rombos aporta una textura premium que eleva cualquier outfit, desde un look casual con jeans hasta el vestido de noche más elegante. ¡El toque final que estabas buscando!
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">100.000</p>
                 <button class="btn_abrir" data-nombre="Bolso acolchado" data-precio="100000"
@@ -53,8 +61,16 @@
 
                 <h3 class="titu">Mini Bag Edisth | LS3308</h3>
 
+                <ul class="puntos-clave">
+                    <li>Silueta Hobo Minimalista</li>
+                    <li>Versatilidad de uso</li>
+                    <li>Cierre Superior de Cremallera</li>
+                </ul>
+
                 <p class="texto1">Completa tu look con la pieza estrella del momento. Nuestro bolso de hombro estilo 90s es la mezcla perfecta de minimalismo y lujo. Su silueta curva y compacta lo hace ideal para llevar bajo el brazo con total comodidad. Ya sea con una de nuestras chaquetas biker o un blazer, este bolso es el toque final para un outfit de impacto. ¡Pequeño en tamaño, gigante en estilo!
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">100.000</p>
                 <button class="btn_abrir" data-nombre="Mini Bag Edisth | LS3308" data-precio="100000"
@@ -68,8 +84,16 @@
 
                 <h3 class="titu">Gafas De Sol Diamond</h3>
 
+                <ul class="puntos-clave">
+                    <li>Patillas con Detalles de Joya</li>
+                    <li>Marcos Metálicos Livianos</li>
+                    <li>Lentes oscuros degradados de alta calidad con protección total contra los rayos solares</li>
+                </ul>
+
                 <p class="texto1">Estas gafas no son solo un accesorio de protección; son una declaración de elegancia y estatus. Con un diseño oversize de líneas cuadradas y sofisticadas, están pensadas para la mujer que busca destacar con un estilo refinado y lujoso.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">100.000</p>
                 <button class="btn_abrir" data-nombre="Gafas De Sol Diamond" data-precio="100000"
@@ -84,8 +108,16 @@
 
                 <h3 class="titu">Catiel Gafas</h3>
 
+                <ul class="puntos-clave">
+                    <li>Marcos metálicos livianos</li>
+                    <li>Diseño sin montura</li>
+                    <li>Lentes de alta definición con degradado oscuro que bloquean el 100% de los rayos solares.</li>
+                </ul>
+
                 <p class="texto1">Estas gafas no son solo un accesorio, son una pieza de distinción. Diseñadas para quienes aprecian la sofisticación de los detalles artesanales, las "Royal Panther" combinan la elegancia clásica con un toque moderno y audaz.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">60.000</p>
                 <button class="btn_abrir" data-nombre="Catiel Gafas" data-precio="60000"
@@ -101,7 +133,15 @@
 
                 <h3 class="titu">Conjunto Collar Manilla Alphabet Gold</h3>
 
+                <ul class="puntos-clave">
+                    <li>Chapado en oro de 18K</li>
+                    <li>Detalles de letra personalizada</li>
+                    <li>Ajuste ajustable versátil</li>
+                </ul>
+
                 <p class="texto1">Este conjunto de collar y pulsera redefine la joyería contemporánea, fusionando la fuerza de la tendencia chunky con la delicadeza de un detalle personalizado. Es la pieza perfecta para quienes buscan un accesorio que hable de su identidad con un brillo sofisticado.
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">1200.000</p>
                 <button class="btn_abrir" data-nombre="Conjunto Collar Manilla Alphabet Gold" data-precio="120000"
@@ -115,8 +155,16 @@
 
                 <h3 class="titu">Variedad De Anillos De Plata</h3>
 
+                <ul class="puntos-clave">
+                    <li>Plata esterlina 925</li>
+                    <li>Gemas de circonio cúbico</li>
+                    <li>Conjunto de cinco diseños</li>
+                </ul>
+
                 <p class="texto1">Nuestra nueva colección de anillos en plata de ley presenta diseños minimalistas creados para resaltar la elegancia natural de tus manos. Desde cristales clásicos hasta sutiles toques de color, cada pieza es una promesa de estilo y durabilidad.
                 </p>
+
+                <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="valor">Cada Anilo Tiene Un Valor De 60.000</p>
 
@@ -148,6 +196,15 @@
         <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
     </div>
    </div>
+
+    <script>
+        function VerMas(btn) {
+            const texto = btn.previousElementSibling;
+            texto.classList.toggle('expandido');
+            btn.textContent = texto.classList.contains('expandido') ? 'ver menos' : 'ver más';
+        }
+    </script>
+
    <script src="./../JavaScript/carrito.js"></script>
     
 </body>

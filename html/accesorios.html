@@ -36,8 +36,16 @@
 
                 <h3 class="titu">Gafas Cartier</h3>
 
+                <ul class="puntos-clave">
+                    <li>Cristales de alta definición que bloquean el 100% de los rayos solares.</li>
+                    <li>Acabado en Oro/Plata</li>
+                    <li>Estilo sin marco para una apariencia sofisticada, ligera y moderna.</li>
+                </ul>
+
                 <p class="texto1">Cristales grises degradados de alta definición que protegen tus ojos con el máximo estilo. Ofrecen una nitidez y un contraste superiores, envolviéndote en un aire de misterio y sofisticación
                 </p>
+
+                 <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">60.000</p>
                 <button class="btn_abrir" data-nombre="Gafas Cartier" data-precio="60000"
@@ -52,8 +60,16 @@
 
                 <h3 class="titu">Gafas Shield</h3>
 
+                <ul class="puntos-clave">
+                    <li>Diseño envolvente que ofrece un campo de visión amplio y audaz.</li>
+                    <li>Detalles laterales y barra superior dorada que garantizan exclusividad.</li>
+                    <li>Fabricadas en policarbonato de alta densidad contra impactos leves.</li>
+                </ul>
+
                 <p class="texto1">Lleva tu estilo al siguiente nivel con estas Versace Shield, el accesorio definitivo para quienes buscan lujo y exclusividad. Su diseño imponente sin montura, resaltado por la icónica barra superior dorada y los detalles de Medusa en los laterales, garantiza una presencia audaz y moderna.
                 </p>
+
+                 <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">100.000</p>
                 <button class="btn_abrir" data-nombre="Gafas Shield" data-precio="100000"
@@ -67,7 +83,15 @@
 
                 <h3 class="titu">Reloj de Hombre Curren 8388</h3>
 
+                <ul class="puntos-clave">
+                    <li>Movimiento japonés preciso para una sincronización perfecta.</li>
+                    <li>Pantalla altamente resistente a rayones y golpes cotidianos.</li>
+                    <li>Pulsera articulada en oro y plata con cierre de seguridad.</li>
+                </ul>
+
                 <p class="texto1">una pieza imponente que combina la elegancia del acero bitono en oro y plata con un robusto bisel negro de alto contraste. Su dial detallado con lupa de fecha y marcadores luminiscentes ofrece funcionalidad y un aire de éxito en cualquier ocasión
+
+                 <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">120.000</p>
                 <button class="btn_abrir" data-nombre="Reloj de Hombre Curren 8338" data-precio="120000"
@@ -82,8 +106,16 @@
 
                 <h3 class="titu">Reloj de Hombre Curren 8409</h3>
 
+                <ul class="puntos-clave">
+                    <li>Acabado premium resistente al desgaste y con brillo de alta intensidad.</li>
+                    <li>Correa de Eslabones Negros</li>
+                    <li>Dial Romano de Lujo</li>
+                </ul>
+
                 <p class="texto1">la pieza perfecta que combina sofisticación y lujo accesible. Su diseño destaca por una imponente caja dorada pulida y una pulsera articulada en negro brillante, ofreciendo una estética moderna y audaz. El dial negro texturizado resalta con elegancia los marcadores de hora en números romanos dorados, garantizando una lectura clara y distinguida
                 </p>
+
+                 <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">130.000</p>
                 <button class="btn_abrir" data-nombre="Reloj de Hombre Curren 8409" data-precio="130000"
@@ -99,8 +131,16 @@
 
                 <h3 class="titu">Anillo Clásico de Plata Ley 925</h3>
 
+                <ul class="puntos-clave">
+                    <li>Plata Maciza Certificada</li>
+                    <li>Acabado Espejo</li>
+                    <li>Diseño Minimalista</li>
+                </ul>
+
                 <p class="texto1">Fabricado en plata de ley 925 maciza, destaca por su diseño sencillo, minimalista y un pulido espejo de alta calidad que captura la luz de manera espectacular. Su perfil redondeado garantiza una comodidad excepcional para el uso diario. Es la pieza perfecta para quienes buscan un accesorio elegante y versátil que complemente cualquier outfi
                 </p>
+
+                 <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">130.000</p>
                 <button class="btn_abrir" data-nombre="Anillo Clasico de Plata Ley 925" data-precio="130000"
@@ -114,8 +154,16 @@
 
                 <h3 class="titu">Cadena Grumet de Plata 925</h3>
 
+                <ul class="puntos-clave">
+                    <li>Largo Estándar Masculino</li>
+                    <li>Broche de Alta Seguridad</li>
+                    <li>Tejido resistente y simétrico que aporta un carácter robusto y moderno.</li>
+                </ul>
+
                 <p class="texto1">Define tu estilo con la pieza esencial del hombre moderno. Nuestra cadena Grumet en Plata de Ley 925 combina un diseño clásico con un brillo excepcional. Versátil, resistente y sin dijes: la pieza perfecta para llevar sola o combinar con tu outfit diario.
                 </p>
+
+                 <button class="btn_ver_mas" onclick="VerMas(this)">Ver Mas</button>
 
                 <p class="precio">150.000</p>
                 <button class="btn_abrir" data-nombre="Cadena Grumet de plata 925" data-precio="150000"
@@ -144,6 +192,14 @@
         <button onclick="vaciarCarrito()" style="background-color: #1b1d85; color: white; margin-top: 10px;">Vaciar Carrito</button>
     </div>
    </div>
+
+    <script>
+        function VerMas(btn) {
+            const texto = btn.previousElementSibling;
+            texto.classList.toggle('expandido');
+            btn.textContent = texto.classList.contains('expandido') ? 'ver menos' : 'ver más';
+        }
+    </script>
 
    <script src="./../JavaScript/carrito.js"></script>
 
